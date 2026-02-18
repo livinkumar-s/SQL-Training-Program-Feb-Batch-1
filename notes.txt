@@ -1,0 +1,77 @@
+Database 
+-----------
+>>  It is organized collection of data stored. So that it can be easily accessed, managed and updated.
+
+RDBMS ----> Relational Database Management System 
+----------------------------------------------------
+>> Data are stored in form of Tables(Rows and Columns)
+>> SQL is needed
+>> Ex: MySQL, Oracle, PostgreSQL....
+
+DBMS (noSQL DB)
+-----
+>> Data are stored in form of Documents(BSON)
+>> SQL is not needed
+>> Ex: MongoDB, MariaDB.... 
+
+MySQL 
+-------
+SQL --> Structured Query Language
+
+Syntax
+-------
+>> It is Case-insensitive.(a=A)
+Ex: SELECT * FROM tbname;
+select * from tbname; 
+SeLeCt * FrOm tbname;
+>> every query should end with ;
+
+table --> animal(entity)--->(color, name, height....(attributes))
+
+Database  --> tb1, tb2 ---> Data
+(Schema)
+
+Datatypes
+----------
+Numeric Datatypes 
+-------------------
+INT --> Whole numbers 
+BIGINT --> Large Whole Numbers
+FLOAT --> Decimal Numbers 
+DOUBLE --> Large Decimal Numbers 
+
+String 
+-------
+CHAR(n) --> fixed length characters string. Ex: CHAR(5)--> "Hi", "Hello", "Hi Bye"
+VARCHAR(n) --> Variable length characters string. EX: VARCHAR(5)--> "Hi", "Hello","Hi Bye"
+TEXT --> paragraph.
+
+Boolean
+--------
+boolean --> 1/0
+
+DATE and TIME 
+-----------------
+DATE ---> "yyyy-mm-dd"
+TIME ---> "HH:MM:SS"
+DATETIME --> both
+
+Keys and Constraints 
+--------------------
+Primary Key ---> It identifies each row uniquely. no duplicates and no null values.
+
+Queries 
+--------
+To create database ---> CREATE DATABASE dbbase;
+To select database ---> USE dbName;
+To Create Table ---> CREATE TABLE tbname (
+    col1 datatype constraints,
+    col2 datatype constraints,
+    .
+    .
+    .
+);
+
+CRUD
+-----
+
