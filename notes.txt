@@ -56,6 +56,16 @@ DATE ---> "yyyy-mm-dd"
 TIME ---> "HH:MM:SS"
 DATETIME --> both
 
+
+Operators
+-------------
+=
+<>,!=
+<
+>
+<=
+>=
+
 Keys and Constraints 
 --------------------
 Primary Key ---> It identifies each row uniquely. no duplicates and no null values.
@@ -71,7 +81,23 @@ To Create Table ---> CREATE TABLE tbname (
     .
     .
 );
+To insert a data to the table --> INSERT INTO tbname (col details(optional)) VALUES (),(),()....;
+To retrive data from table --> SELECT (col details ---> *) FROM tbname;
+To update a record ---> UDTATE tbname SET col=val,col=val.......;
+To delete a record --> DELETE FROM tbname;
+
+SQL_SAFE_UDTAES --> ON --> you can update only one record. WHERE clause is must. the condition should depend on PK column.
+
 
 CRUD
 -----
+CREATE --> INSERT
+READ ---> SELECT
+UPDATE ---> UPDATE
+DELETE ---> DELETE
 
+
+WHERE CLAUSE 
+---------------
+used filter the rows.
+Ex: SELECT, UPDATE, DELETE..... WHERE cond;
