@@ -66,6 +66,50 @@ Operators
 <=
 >=
 
+Between
+--------
+Used for range filtering (inclusive range).
+Ex: ..... WHERE col BETWEEN num1 AND num2;
+
+In operator 
+-----------
+>> Used when matching multiple possible values.
+Ex: .... WHERE col in (val1,val2....);
+
+Logical Operators
+-------------------
+AND ---> True ---> Both are True
+OR ---> True ---> any one cond True
+NOT ---> reverse the boolean
+
+LIKE operator 
+-------------------
+>> Pattern matching 
+Used for searching patterns in text.
+
+Ex: ....  WHERE col LIKE pattern;
+
+Wildcards 
+------------
+% ---> matches 0 to any number of chars.
+_ ---> exactly one char.
+
+Starts with n --> 'n%' ---> nikil,nagarjuna,n......
+Ends with n ---> "%n" --> livin,naveen,n, gwenn
+contains exactly 5 char --> "____n" --> livin,naveen,
+
+Sorting
+--------
+>> used to arrange the records
+Ex: ....ORDER BY col ASC/DESC
+
+LIMIT/OFFSET
+-------------
+Limit --> limit the number of rows at the output
+....limit num;
+Offset --> Skip the records at the begenning.
+....limit num Offset num;
+
 Keys and Constraints 
 --------------------
 Primary Key ---> It identifies each row uniquely. no duplicates and no null values.
