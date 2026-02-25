@@ -145,3 +145,31 @@ WHERE CLAUSE
 ---------------
 used filter the rows.
 Ex: SELECT, UPDATE, DELETE..... WHERE cond;
+
+Functions 
+--------------
+>> A function is a predefined operation that:
+takes input ---> processes it --> returns output.
+
+Numeric Functions 
+-------------------
+ROUND---> It rounds off a number. nearest integer
+CEIL---> It rounds off a dec number. next integer
+FLOOR ---> It rounds off a dec number. discord the decimal places
+MOD(a,b) ----> it returns reminder
+
+String Functions 
+-------------------
+CONCAT(str1,str2,str3.....) ---> attaching multiple strings
+LENGTH(str) --> retuns length of that string.
+UPPER
+LOWER
+REPLACE(str,old,new) --> to replace a specific part of string 
+SUBSTRING(str, start, len) --> to extract specific part of a string.
+
+Date and Time 
+-------------
+CURDATE()--> to get the current date
+curtime()--> to get current time
+NOW() -->both
+DATEDIFF(d1,d2) --> difference between 2 dates in days.
