@@ -112,7 +112,21 @@ Offset --> Skip the records at the begenning.
 
 Keys and Constraints 
 --------------------
+Key 
+----
 Primary Key ---> It identifies each row uniquely. no duplicates and no null values.
+
+Foreign Key ---> It creates relationship between 2 tables. prevents invalid data
+
+Constraints 
+--------------
+>> It is a set of rules applied to a column to ensure data intergrity.
+
+UNIQUE ---> Ensures column values are unique.
+NOT NULL ---> Ensures column values are not null.
+AUTO_INCREMENT --> Automatically increases value by 1 when inserting new record....(primary key)
+DEFAULT --> assigns default value to a column.
+CHECK
 
 Queries 
 --------
@@ -173,3 +187,23 @@ CURDATE()--> to get the current date
 curtime()--> to get current time
 NOW() -->both
 DATEDIFF(d1,d2) --> difference between 2 dates in days.
+
+
+cricketer 
+------------
+id       name               email         isActive        noc 
+----------------------------------------------------------
+1	    Virat kohli	        vk@gmail.com	1	    85
+2	    Rohit sharma	    rs@gmail.com	1	    50
+3	    KL Rahul	        kl@gmail.com	1	    21
+4	    Sachein Tendulkar	st@gmail.com	0	    100
+5	    MS Dhoni	        msd@gmail.com	0	    16
+6	    Baian Laura	        bl@gmail.com	0	    53
+
+jersey 
+--------
+id     jersey    playerId(fk --->pk(cricketer))
+---------------------------
+1       18        1
+2       7         5
+3       555       10
