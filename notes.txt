@@ -219,37 +219,32 @@ Cross Join
 >> Returns every combination of rows.
 no of rows in result --> rows in lt * rows in rt.
 
+Aggregation and Grouping 
+-------------------------
+Aggregate Functions 
+----------------------
+COUNT() --> Counts number of the row.
+MAX() --> finds out largest value
+MIN() --> finds out smallest value
+SUM() --> finds out the sum
+AVG() --> finds average
 
-actorlist 
+Grouping
 -----------
-id(pk)   name          age 
----------------------------
-1	Vijay	            53
-2	Ajith	            54
-3	Rajini	            74
-4	Prabhas         	45
-5	Kamal Hasan	        70
-6	Balayya	            56
-7	Ranveer kapoor	    47
-8	Pawan Kalyan	    62
+Grouping rows having same values into summary rows.
+Ex: Select aggFn() From Tbname GROUP BY col;
 
-latestmovie 
-----------------
-id    movie        actorId
----------------------------
-1	GOAT	        1
-2	Thug life	    5
-3	GBU	            2
-4	Animal	        7
-5	F1	            10
+Where---> used to filter only the rows.
+HAVING --> used to filter the groups.
 
-id(pk)   name          age   id    movie        actorId
-------------------------------------------------------
-1	Vijay	            53   1	GOAT	        1
-2	Ajith	            54   3	GBU	            2
-3	Rajini	            74  null  null         null
-4	Prabhas         	45
-5	Kamal Hasan	        70
-6	Balayya	            56
-7	Ranveer kapoor	    47
-8	Pawan Kalyan	    62
+
+
+1	tomato	        44.35	veg
+2	onion	        34.35	veg
+3	eggplant	    14.55	veg
+4	apple	        144.35	fruit
+5	orange	        100.44	fruit
+6	grapes	        194.35	fruit
+7	headphone	    1000	gadget
+8	phone	        30000	gadget
+9	lap	            100000	gadget
