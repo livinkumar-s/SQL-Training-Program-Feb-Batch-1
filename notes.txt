@@ -237,14 +237,25 @@ Ex: Select aggFn() From Tbname GROUP BY col;
 Where---> used to filter only the rows.
 HAVING --> used to filter the groups.
 
+Sub Queries
+-------------
+A subquery is a query written inside another query.
+Ex: query (inner query)
+>> inner query will be executed first.
+>> its result used in outer query.
 
+Single Row subquery
+---------------------
+>> Will return only one row
 
-1	tomato	        44.35	veg
-2	onion	        34.35	veg
-3	eggplant	    14.55	veg
-4	apple	        144.35	fruit
-5	orange	        100.44	fruit
-6	grapes	        194.35	fruit
-7	headphone	    1000	gadget
-8	phone	        30000	gadget
-9	lap	            100000	gadget
+Multiple Row subquery
+---------------------
+>> Will return more than one row.
+ANY
+ALL 
+
+Correlated subquery
+----------------------
+>> the subquery depends on the outer query.
+>> it executes once for every rows.
+
