@@ -45,6 +45,7 @@ String
 CHAR(n) --> fixed length characters string. Ex: CHAR(5)--> "Hi", "Hello", "Hi Bye"
 VARCHAR(n) --> Variable length characters string. EX: VARCHAR(5)--> "Hi", "Hello","Hi Bye"
 TEXT --> paragraph.
+ENUM --> ex: enum ("boy","girl")
 
 Boolean
 --------
@@ -154,6 +155,19 @@ READ ---> SELECT
 UPDATE ---> UPDATE
 DELETE ---> DELETE
 
+ALTER 
+--------
+ALTER TABLE --> it is used to modify the structure of an existing table.
+
+To add new Col --> ALTER TABLE tbname ADD colDetail;
+To modify a col --> ALTER TABLE tbname MODIFY name modification...;
+To Drop a column ---> ALTER TABLE tbname DROP COLUMN name;
+To Rename a column --> ALTER TABLE tbname RENAME COLUMN OLD TO NEW;
+
+To Rename the table ----> ALTER TABLE tbname RENAME TO newName;
+To Drop a table ---> DROP TABLE tbname;
+To Drop Database ---> DROP DATABASE dbname;
+
 
 WHERE CLAUSE 
 ---------------
@@ -259,3 +273,15 @@ Correlated subquery
 >> the subquery depends on the outer query.
 >> it executes once for every rows.
 
+
+Views 
+--------
+>> A view in mySQL is a virtual table created from the result of a SQL Query.
+>> It will not store physical data like normal tables.
+>> it stores result from a SELECT query.
+
+To create VIEW --> CREATE VIEW viewName as SELECT  .......
+
+admin --> all,
+teacher ---> id, name, mark, dept
+stu --> name, mark
